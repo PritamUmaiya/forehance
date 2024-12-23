@@ -1,0 +1,126 @@
+@import url('content.css');
+@import url('layout.css');
+@import url('utilities.css');
+@import url('components/buttons.css');
+
+:root, .light {
+    /*colors*/
+    --red: #d92843;
+    --orange: #f46721;
+    --yellow: #faaa15;
+    --green: #208a56;
+    --teal: #19917d;
+    --cyan: #1797aa;
+    --blue: #0f6dfa;
+    --indigo: #6911f7;
+    --purple: #b72ef2;
+    --pink: #ed2a7b;
+    --white: #fff;
+    --black: #000;
+    --light: #f9fafb;
+    --dark: #21262c;
+
+    --test: #636c70;
+    --test-50: color-mix(in srgb, var(--test), #fff 90%);
+    --test-100: color-mix(in srgb, var(--test), #fff 80%);
+    --test-200: color-mix(in srgb, var(--test), #fff 60%);
+    --test-300: color-mix(in srgb, var(--test), #fff 40%);
+    --test-400: color-mix(in srgb, var(--test), #fff 20%);
+    --test-500: var(--test);
+    --test-600: color-mix(in srgb, var(--test), #000 20%);
+    --test-700: color-mix(in srgb, var(--test), #000 40%);
+    --test-800: color-mix(in srgb, var(--test), #000 60%);
+    --test-900: color-mix(in srgb, var(--test), #000 80%);
+    --test-950: color-mix(in srgb, var(--test), #000 90%);
+    
+    /*gray shades*/
+    --gray-50: #f9fafb;
+    --gray-100: #f0f2f4;
+    --gray-200: #e2e6e9;
+    --gray-300: #d4d9de;
+    --gray-400: #c6ccd2;
+    --gray-500: #808c99;
+    --gray-600: #434d56;
+    --gray-700: #374048;
+    --gray-800: #2c333a;
+    --gray-900: #21262c;
+    --gray-950: #151a1e;
+
+    
+    /*pallate*/
+    --primary: #0f6dfa;
+    --secondary: #434d56;
+    --danger: #ed324e;
+    /*theme colors*/
+    --bg-body: #fff;
+    --bg-body-secondary: #f9fafb;
+    --bg-body-tertiary: #f0f2f4;
+    --text-body: #21262c;
+    --text-body-secondary: #2c333a;
+    --text-body-tertiary: #374048;
+    /*fonts*/
+    --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --body-font-size: 1rem;
+    /*others*/
+    --border-width: 1px;
+    --border-style: solid;
+    --border-color: #d4d9de;
+    --border-radius: 0.375rem;
+    --border-radius-sm: 0.25rem;
+    --border-radius-lg: 0.5rem;
+    --border-radius-xl: 1rem;
+    --border-radius-xxl: 2rem;
+    --border-radius-pill: 50rem;
+    --box-shadow-sm: 0 0 3px rgba(0, 0, 0, 0.175);
+    --box-shadow: 0 0 5px rgba(0, 0, 0, 0.175);
+    --box-shadow-lg: 0 0 10px rgba(0, 0, 0, 0.175);
+    --highlight-color: #151a1e;
+    --highlight-bg: #fff3cd;
+    --heading-color: inherit;
+    --link-color: #0f6dfa;
+    --code-color: #e6357e;
+}
+
+.dark {
+    color-scheme: dark;
+    --secondary: #434d56;
+    --bg-body: #151a1e;
+    --bg-body-secondary: #21262c;
+    --bg-body-tertiary: #374048;
+    --text-body: #f9fafb;
+    --text-body-secondary: #f0f2f4;
+    --text-body-tertiary: #e2e6e9;
+    --highlight-color: #e2e6e9;
+    --highlight-bg: #664d03;
+    --border-color: #434d56;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans-serif);
+    font-size: var(--body-font-size);
+    background-color: var(--bg-body);
+    color: var(--text-body);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+header, main, footer, aside, article {
+    background-color: var(--bg-body);
+}
+
+.test {
+    height: 56px;
+}
